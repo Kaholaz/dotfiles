@@ -3,10 +3,10 @@ alias cirkus="mosh vsbugge@cirkus.samfundet.no"
 alias alter="mosh vsbugge@altersex.samfundet.no"
 alias navi="mosh vsbugge@navi.samfundet.no"
 alias kint="kinit vsbugge@AD.SAMFUNDET.NO"
-
-alias pivpn="wg-quick up pivpn"
-alias newton="mosh kaholaz@newton"
-alias turing="mosh VKBug@turing"
 export GPG_TTY=$(tty)
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+if [ -f ~/.local_aliases ]; then
+    source ~/.local_aliases
+fi
