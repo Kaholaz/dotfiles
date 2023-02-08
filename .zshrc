@@ -106,5 +106,5 @@ source .aliases
 
 # Attach to a tmux session on startup
 if [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
+    tmux attach -t Default || tmux new -s Default
 fi
