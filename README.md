@@ -1,7 +1,7 @@
 # To install:
-git clone --bare <remote-git-repo-url> $HOME/.dotfiles
+git clone --bare git@github.com:Kaholaz/dotfiles.git $HOME/.dotfiles
 
-alias dotfiles='/usr/bin/git --git-dir=\$HOME/.dotfiles/ --work-tree=\$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 dotfiles config --local status.showUntrackedFiles no
 
