@@ -31,7 +31,7 @@ zplug "plugins/git", from:oh-my-zsh
 zplug chriskempson/base16-shell, from:github
 
 zplug load
-base16_dracula
+base16_gruvbox-dark-hard
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
