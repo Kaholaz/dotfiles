@@ -1,7 +1,6 @@
 #!/bin/bash
-if [ ! $HOME/.oh-my-zsh ] sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-if [ ! $HOME/.zplug ] curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh  
+if [ ! $HOME/.oh-my-zsh ]; then sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi
+if [ ! $HOME/.zplug ]; then curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh; fi
 zplug install
 
 # Start zsh
