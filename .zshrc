@@ -102,5 +102,9 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
 source .aliases
+
+# Attach to a tmux session on startup
+if [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
