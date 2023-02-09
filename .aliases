@@ -24,6 +24,9 @@ alias lr="exa -lrs=modified --color=always"
 alias view="nvim -R"
 alias vim="nvim"
 
+# neomutt > mutt
+alias mutt=neomutt
+
 
 if [ -f ~/.local_aliases ]; then
     source ~/.local_aliases
