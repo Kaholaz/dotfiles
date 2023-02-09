@@ -42,5 +42,6 @@ if [ -z "$TMUX" ]; then
     tmux attach -t Default || tmux new -s Default
 fi
 
+source .profile
 source .aliases
 
