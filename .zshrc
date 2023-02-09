@@ -28,9 +28,8 @@ zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-synta
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
 
-# Base16
+# Base16 (This should be the last plugin)
 zplug chriskempson/base16-shell, from:github
-
 zplug load
 base16_gruvbox-dark-hard
 
