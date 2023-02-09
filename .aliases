@@ -1,3 +1,4 @@
+# Servers
 alias cassa="mosh vsbugge@cassarossa.samfundet.no"
 alias cirkus="mosh vsbugge@cirkus.samfundet.no"
 alias alter="mosh vsbugge@altersex.samfundet.no"
@@ -6,6 +7,23 @@ alias kint="kinit vsbugge@AD.SAMFUNDET.NO"
 export GPG_TTY=$(tty)
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotf=dotfiles
+
+alias cat=bat
+alias cp="cp -i"
+alias itprint="lp -h printhost.samfundet.no -d motzfeldt $1"
+
+# Lazy ls
+alias l="exa --color=always" # lazy ls
+alias la="exa -al --color=always"
+alias ll="exa -l --color=always"
+alias ls="exa"
+alias lr="exa -lrs=modified --color=always"
+
+# nvim > vim
+alias view="nvim -R"
+alias vim="nvim"
+
 
 if [ -f ~/.local_aliases ]; then
     source ~/.local_aliases
