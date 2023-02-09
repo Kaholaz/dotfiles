@@ -26,6 +26,7 @@ zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-synta
 
 # Plugins from oh my zsh
 zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
 
 # Base16
 zplug chriskempson/base16-shell, from:github
