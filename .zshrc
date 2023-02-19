@@ -30,6 +30,9 @@ zplug chriskempson/base16-shell, from:github
 zplug load
 base16_gruvbox-dark-hard
 
+# Sync to task server
+task sync > /dev/null 2> /dev/null
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
