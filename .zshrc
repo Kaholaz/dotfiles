@@ -41,8 +41,14 @@ else
 fi
 
 # Attach to a tmux session on startup
-if [ -z "$TMUX" ] && [ -n "$SSH_CLIENT" ]; then
+if [ -z "$TMUX" ] && [ -n "$SSH_CONNECTION" ]; then
     tmux attach -t Default || tmux new -s Default
+fi
+
+
+# Attach to a tmux session on startup
+if [ -z "$TMUX" ]; then
+    curl -s 'wttr.in/Trondheim?format=%l:+%c%t\n'
 fi
 
 source ~/.profile
