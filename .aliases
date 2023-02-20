@@ -27,6 +27,9 @@ alias vim="nvim"
 # neomutt > mutt
 alias mutt=neomutt
 
+# trash > rm
+alias rm=trash
+
 # Extract any archive
 extract () {
   if [ -f $1 ] ; then
