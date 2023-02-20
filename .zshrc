@@ -53,6 +53,9 @@ if [ -z "$TMUX" ]; then
     fortune -s
 fi
 
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+
 source ~/.profile
 source ~/.aliases
 
