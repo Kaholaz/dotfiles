@@ -48,7 +48,9 @@ fi
 
 # Attach to a tmux session on startup
 if [ -z "$TMUX" ]; then
-    curl -s 'wttr.in/Trondheim?format=%l:+%c%t\n'
+    curl -s 'wttr.in/Trondheim?format=%l:+%c%t\n' --connect-timeout 0.5 2> /dev/null
+    echo " ---"
+    fortune -s
 fi
 
 source ~/.profile
