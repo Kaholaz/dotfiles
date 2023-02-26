@@ -11,3 +11,7 @@ fi
 if [ -d "$HOME/.cargo" ] ; then
     . "$HOME/.cargo/env"
 fi
+
+if [ -d "$HOME/go" ] ; then
+    GOPATH="$HOME/go"
+fi
