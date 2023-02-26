@@ -8,6 +8,7 @@ export GPG_TTY=$(tty)
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotf=dotfiles
+alias nconf='/usr/bin/git --git-dir=$HOME/.config/nvim/.git --work-tree=$HOME/.config/nvim'
 
 alias cat=bat
 alias cp="cp -i"
