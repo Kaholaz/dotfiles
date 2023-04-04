@@ -3,6 +3,7 @@ ZSH_THEME="afowler"
 
 source $ZSH/oh-my-zsh.sh
 
+
 # :: Zplug - ZSH plugin manager
 export ZPLUG_HOME=$HOME/.zplug
 
@@ -30,8 +31,17 @@ zplug chriskempson/base16-shell, from:github
 zplug load
 base16_gruvbox-dark-hard
 
+if dig @1.1.1.1 google.com +timeout=1 >/dev/null 2>&1; then;
+	HAS_NETWORK=1
+else
+	echo "No internet connection detected!"
+	HAS_NETWORK=0
+fi
+
 # Sync to task server
-task sync > /dev/null 2> /dev/null
+if [[ "$HAS_NETWORK" == 1 ]]; then
+	task sync > /dev/null 2> /dev/null
+fi
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -47,7 +57,7 @@ fi
 
 
 # Attach to a tmux session on startup
-if [ -z "$TMUX" ]; then
+if [ -z "$TMUX" ] && [[ "$HAS_NETWORK" == 1 ]]; then
     curl -s 'wttr.in/Trondheim?format=%l:+%c%t\n' --connect-timeout 0.5 2> /dev/null
     echo " ---"
     fortune -s
