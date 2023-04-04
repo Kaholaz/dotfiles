@@ -53,6 +53,8 @@ extract () {
   fi
 }
 
+alias ntnupass="bw get password a2cde2dd-bd5f-4771-913d-ad75013a09a5 | xclip -selection c"
+
 
 if [ -f ~/.local_aliases ]; then
     source ~/.local_aliases
