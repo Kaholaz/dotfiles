@@ -55,6 +55,10 @@ extract () {
 
 alias ntnupass="bw get password a2cde2dd-bd5f-4771-913d-ad75013a09a5 | xclip -selection c"
 
+itks() {
+	xdg-open "https://google.com/search?q=$1+site%3Aitk.samfundet.no"
+}
+
 
 if [ -f ~/.local_aliases ]; then
     source ~/.local_aliases
