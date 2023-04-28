@@ -59,6 +59,8 @@ itks() {
 	xdg-open "https://google.com/search?q=$1+site%3Aitk.samfundet.no"
 }
 
+alias clip="xclip -selection clip"
+
 
 if [ -f ~/.local_aliases ]; then
     source ~/.local_aliases
