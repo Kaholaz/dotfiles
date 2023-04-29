@@ -15,3 +15,6 @@ fi
 if [ -d "$HOME/go" ] ; then
     GOPATH="$HOME/go"
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
