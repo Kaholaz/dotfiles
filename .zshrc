@@ -58,7 +58,7 @@ fi
 
 # Attach to a tmux session on startup
 if [ -z "$TMUX" ] && [[ "$HAS_NETWORK" == 1 ]]; then
-    curl -s 'wttr.in/Trondheim?format=%l:+%c%t\n' --connect-timeout 0.5 2> /dev/null
+    curl -s 'wttr.in/Trondheim?format=%l:+%c%t\n' --max-time 0.5 2> /dev/null
     echo " ---"
     fortune -s
 fi
