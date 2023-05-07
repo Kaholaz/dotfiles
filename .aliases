@@ -61,6 +61,13 @@ itks() {
 
 alias clip="xclip -selection clip"
 
+dchmod () {
+	find $2 -type d -exec chmod $1 {} +
+}
+fchmod () {
+	find $2 -type f -exec chmod $1 {} +
+}
+
 
 if [ -f ~/.local_aliases ]; then
     source ~/.local_aliases
