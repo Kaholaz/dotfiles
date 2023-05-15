@@ -65,3 +65,7 @@ alias clip="xclip -selection clip"
 if [ -f ~/.local_aliases ]; then
     source ~/.local_aliases
 fi
+
+detach() {
+        $1 $2 </dev/null &>/dev/null &; disown;
+}
