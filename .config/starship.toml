@@ -144,6 +144,6 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = '[$ssh_symbol](bold blue) on [$hostname](bold yellow) '
 trim_at = '.'
+format = ' [$ssh_symbol](bold blue)on [$hostname](bold yellow) '
 disabled = false
