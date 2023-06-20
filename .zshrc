@@ -31,7 +31,7 @@ zplug chriskempson/base16-shell, from:github
 zplug load
 base16_gruvbox-dark-hard
 
-if dig @1.1.1.1 google.com +timeout=1 >/dev/null 2>&1; then;
+if dig google.com +timeout=1 >/dev/null 2>&1; then;
 	HAS_NETWORK=1
 else
 	echo "No internet connection detected!"
