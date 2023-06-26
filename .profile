@@ -22,6 +22,6 @@ if [ -s "$NVM_DIR/nvm.sh" ]; then
 	\. "$NVM_DIR/bash_completion" # nvm bash completions
 fi
 
-if [ -d "$HOME/.local_profile" ]; then
+if [ -s "$HOME/.local_profile" ]; then
 	\. "$HOME/.local_profile"
 fi
