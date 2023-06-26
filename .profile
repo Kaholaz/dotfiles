@@ -17,8 +17,11 @@ if [ -d "$HOME/go" ]; then
 fi
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+if [ -d "$NVM_DIR/nvm.sh" ]; then
+	\. "$NVM_DIR/nvm.sh" # This loads nvm
+	\. "$NVM_DIR/bash_completion" # nvm bash completions
+fi
 
-if [ -d "$HOME/.local_profile" ] ; then
-	. "$HOME/.local_profile"
+if [ -d "$HOME/.local_profile" ]; then
+	\. "$HOME/.local_profile"
 fi
