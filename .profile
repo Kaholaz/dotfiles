@@ -17,7 +17,7 @@ if [ -d "$HOME/go" ]; then
 fi
 
 export NVM_DIR="$HOME/.nvm"
-if [ -d "$NVM_DIR/nvm.sh" ]; then
+if [ -s "$NVM_DIR/nvm.sh" ]; then
 	\. "$NVM_DIR/nvm.sh" # This loads nvm
 	\. "$NVM_DIR/bash_completion" # nvm bash completions
 fi
