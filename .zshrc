@@ -1,3 +1,5 @@
+source ~/.profile
+
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="afowler"
 
@@ -66,8 +68,6 @@ fi
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000000
 
-source ~/.profile
 source ~/.aliases
-
 
 eval "$(starship init zsh)"
