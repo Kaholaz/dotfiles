@@ -8,7 +8,7 @@ if [ -d "$HOME/.local/bin" ]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "$HOME/.cargo/env" ]; then
+if [ -s "$HOME/.cargo/env" ]; then
 	. "$HOME/.cargo/env"
 fi
 
