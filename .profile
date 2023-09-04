@@ -25,3 +25,5 @@ fi
 if [ -s "$HOME/.local_profile" ]; then
 	\. "$HOME/.local_profile"
 fi
+
+[ -f "/home/kaholaz/.ghcup/env" ] && source "/home/kaholaz/.ghcup/env" # ghcup-env
