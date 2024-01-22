@@ -18,7 +18,7 @@ fi
 
 export NVM_DIR="$HOME/.nvm"
 if [ -s "$NVM_DIR/nvm.sh" ]; then
-	\. "$NVM_DIR/nvm.sh" # This loads nvm
+	\. "$NVM_DIR/nvm.sh"          # This loads nvm
 	\. "$NVM_DIR/bash_completion" # nvm bash completions
 fi
 
@@ -27,3 +27,20 @@ if [ -s "$HOME/.local_profile" ]; then
 fi
 
 [ -f "/home/kaholaz/.ghcup/env" ] && source "/home/kaholaz/.ghcup/env" # ghcup-env
+
+if [ -d "$HOME/.asdf" ]; then
+	\. "$HOME/.asdf/asdf.sh"
+	\. "$HOME/.asdf/completions/asdf.bash"
+fi
+
+if [ -f "$HOME/.local/share/pnpm" ]; then
+	export PNPM_HOME="$HOME/.local/share/pnpm"
+	case ":$PATH:" in
+	*":$PNPM_HOME:"*) ;;
+	*) export PATH="$PNPM_HOME:$PATH" ;;
+	esac
+fi
+
+if [ -n "$ZSH_VERSION" ] && type "hugo" >/dev/null; then
+	. <(hugo completion zsh)
+fi
