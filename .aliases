@@ -31,6 +31,8 @@ alias mutt=neomutt
 # trash > rm
 alias rm=trash
 
+alias dt="date '+%Y-%m-%dT%T%z'"
+
 # Extract any archive
 extract () {
   if [ -f $1 ] ; then
