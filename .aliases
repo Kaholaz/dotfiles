@@ -33,6 +33,8 @@ alias rm=trash
 
 alias dt="date '+%Y-%m-%dT%T%z'"
 
+alias edit-nvim="cd $HOME/.config/nvim && nvim . && cd -"
+
 # Extract any archive
 extract () {
   if [ -f $1 ] ; then
