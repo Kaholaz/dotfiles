@@ -76,5 +76,5 @@ if [ -f ~/.local_aliases ]; then
 fi
 
 detach() {
-        $1 $2 </dev/null &>/dev/null &; disown;
+        "$1 $2 </dev/null &>/dev/null &; disown;"
 }
