@@ -5,7 +5,6 @@ ZSH_THEME="afowler"
 
 source $ZSH/oh-my-zsh.sh
 
-
 # :: Zplug - ZSH plugin manager
 export ZPLUG_HOME=$HOME/.zplug
 
@@ -38,11 +37,6 @@ if dig google.com +timeout=1 >/dev/null 2>&1; then;
 else
 	echo "No internet connection detected!"
 	HAS_NETWORK=0
-fi
-
-# Sync to task server
-if [[ "$HAS_NETWORK" == 1 ]]; then
-	task sync > /dev/null 2> /dev/null
 fi
 
 # Preferred editor for local and remote sessions
