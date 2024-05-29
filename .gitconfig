@@ -1,0 +1,19 @@
+[init]
+	defaultBranch = main
+[user]
+	email = vkbugge@hotmail.com
+	name = Sebastian Bugge
+[pull]
+	ff = false
+	rebase = true
+[rebase]
+	autoStash = true
+[alias]
+	publish = !git pull && git push
+[push]
+	default = current
+	autoSetupRemote = true
+[rerere]
+	enabled = true
+[help]
+	autocorrect = 10
