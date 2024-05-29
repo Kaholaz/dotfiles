@@ -17,3 +17,5 @@
 	enabled = true
 [help]
 	autocorrect = 10
+[includeIf "gitdir:~/code/"]
+    path = ~/code/.gitconfig
