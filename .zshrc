@@ -1,5 +1,3 @@
-source ~/.profile
-
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="afowler"
 
@@ -39,13 +37,6 @@ else
 	HAS_NETWORK=0
 fi
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nvim'
-else
-  export EDITOR='nvim'
-fi
-
 # Attach to a tmux session on startup
 if [ -z "$TMUX" ] && [ -n "$SSH_CONNECTION" ]; then
     tmux attach -t Default || tmux new -s Default
@@ -59,7 +50,6 @@ if [ -z "$TMUX" ] && [[ "$HAS_NETWORK" == 1 ]]; then
     fortune -s
 fi
 
-export HISTFILESIZE=1000000000
-export HISTSIZE=1000000000
-
 source ~/.aliases
+fpath+=~/.zfunc
+autoload -U compinit; compinit
