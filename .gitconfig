@@ -1,7 +1,6 @@
 [init]
 	defaultBranch = main
 [user]
-	email = vkbugge@hotmail.com
 	name = Sebastian Bugge
 [pull]
 	ff = false
@@ -18,4 +17,6 @@
 [help]
 	autocorrect = 10
 [includeIf "gitdir:~/code/"]
-    path = ~/code/.gitconfig
+  path = ~/code/.gitconfig
+[include]
+	path = ~/.gitconfig_local
