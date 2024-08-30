@@ -17,6 +17,6 @@
 [help]
 	autocorrect = 10
 [includeIf "gitdir:~/code/"]
-  path = ~/code/.gitconfig
+	path = ~/code/.gitconfig
 [include]
 	path = ~/.gitconfig_local
