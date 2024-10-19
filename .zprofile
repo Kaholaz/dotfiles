@@ -11,9 +11,3 @@ export NVM_DIR="$HOME/.nvm"
 if [ -s "$NVM_DIR/nvm.sh" ]; then
 	\. "$NVM_DIR/nvm.sh"          # This loads nvm
 fi
-
-[ -f "/home/kaholaz/.ghcup/env" ] && source "/home/kaholaz/.ghcup/env" # ghcup-env
-
-if [ -d "$HOME/.asdf" ]; then
-	\. "$HOME/.asdf/asdf.sh"
-fi

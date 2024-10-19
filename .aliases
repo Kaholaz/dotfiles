@@ -3,6 +3,7 @@ alias cassa="mosh vsbugge@cassarossa.samfundet.no"
 alias cirkus="mosh vsbugge@cirkus.samfundet.no"
 alias alter="mosh vsbugge@altersex.samfundet.no"
 alias navi="mosh vsbugge@navi.samfundet.no"
+alias cassini="mosh cassini"
 alias kint="kinit vsbugge@AD.SAMFUNDET.NO"
 export GPG_TTY=$(tty)
 

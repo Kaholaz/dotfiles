@@ -41,3 +41,9 @@ if [ -f "$HOME/.local/share/pnpm" ]; then
 	*) export PATH="$PNPM_HOME:$PATH" ;;
 	esac
 fi
+
+export PATH="$PATH:/home/kaholaz/.cache/scalacli/local-repo/bin/scala-cli"
+
+# >>> coursier install directory >>>
+export PATH="$PATH:/home/kaholaz/.local/share/coursier/bin"
+# <<< coursier install directory <<<

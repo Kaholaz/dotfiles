@@ -50,6 +50,10 @@ if [ -z "$TMUX" ] && [[ "$HAS_NETWORK" == 1 ]]; then
     fortune -s
 fi
 
+if [ -d "$HOME/.asdf" ]; then
+	\. "$HOME/.asdf/asdf.sh"
+fi
+
 source ~/.aliases
 fpath+=~/.zfunc
 autoload -U compinit; compinit
