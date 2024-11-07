@@ -2,6 +2,7 @@
 	defaultBranch = main
 [user]
 	name = Sebastian Bugge
+	useConfigOnly = true
 [pull]
 	ff = false
 	rebase = true
@@ -14,6 +15,8 @@
 	autoSetupRemote = true
 [rerere]
 	enabled = true
+[advice]
+	skippedCherryPicks = false
 [help]
 	autocorrect = 10
 [include]
